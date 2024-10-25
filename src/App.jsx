@@ -7,6 +7,7 @@ import Collaboration from "@/components/Collaboration";
 import Services from "@/components/Services";
 import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
+import { FaWhatsapp } from "react-icons/fa";
 const App = () => {
   return (
     <>
@@ -18,6 +19,13 @@ const App = () => {
         <Services />
         <Pricing />
         <Footer />
+      </div>
+      <div
+        className={`fixed flex items-center justify-center hover:scale-110 duration-700 rounded-full w-14 h-14 bg-[#00E676] text-yellow-500 z-[100] md:right-14 right-6 bottom-6   `}
+      >
+        <a href="https://wa.link/svfaqz" className="" target="_blank">
+          <FaWhatsapp className="text-white text-3xl" />
+        </a>
       </div>
       <ButtonGradient />
     </>
