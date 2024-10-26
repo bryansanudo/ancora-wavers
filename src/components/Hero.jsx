@@ -11,6 +11,16 @@ import { ScrollParallax } from "react-just-parallax";
 import pink from "@/assets/diamond-pink.png";
 import blue from "@/assets/diamond-blue.png";
 import yellow from "@/assets/diamond-yellow.png";
+
+import hero0 from "@/assets/hero/hero0.png";
+import hero1 from "@/assets/hero/hero1.png";
+import hero2 from "@/assets/hero/hero2.png";
+import hero3 from "@/assets/hero/hero3.png";
+import hero4 from "@/assets/hero/hero4.png";
+import hero5 from "@/assets/hero/hero5.png";
+import hero6 from "@/assets/hero/hero6.png";
+import hero7 from "@/assets/hero/hero7.png";
+import hero8 from "@/assets/hero/hero8.png";
 const Hero = () => {
   const parallaxRef = useRef(null);
 
@@ -21,32 +31,32 @@ const Hero = () => {
           <div className="relative z-50 max-w-[62rem] mx-auto text-center  ">
             <ScrollParallax isAbsolutelyPositioned>
               <div className="hidden xl:flex absolute top-[10rem] -left-[14rem]">
-                <img src={pink} className="w-[25%] " alt="" />
+                <img src={hero0} className="w-[70%] " alt="" />
               </div>
             </ScrollParallax>
             <ScrollParallax isAbsolutelyPositioned>
               <div className="hidden xl:flex absolute top-[40rem] -right-[3rem]">
-                <img src={pink} className="w-[25%] " alt="" />
+                <img src={hero1} className="w-[30%] " alt="" />
               </div>
             </ScrollParallax>
             <ScrollParallax isAbsolutelyPositioned>
-              <div className="hidden xl:flex absolute top-[28rem] -left-[7rem]">
-                <img src={blue} className="w-[25%]" alt="" />
+              <div className="hidden xl:flex absolute top-[28rem] -left-[18rem]">
+                <img src={hero2} className="w-[50%]" alt="" />
               </div>
             </ScrollParallax>
             <ScrollParallax isAbsolutelyPositioned>
               <div className="hidden xl:flex absolute top-[9rem] -right-[7rem]">
-                <img src={blue} className="w-[25%]" alt="" />
+                <img src={hero3} className="w-[60%]" alt="" />
               </div>
             </ScrollParallax>
             <ScrollParallax isAbsolutelyPositioned>
               <div className="hidden xl:flex absolute top-[18rem] -right-[20rem]">
-                <img src={yellow} className="w-[25%]" alt="" />
+                <img src={hero4} className="w-[70%]" alt="" />
               </div>
             </ScrollParallax>
             <ScrollParallax isAbsolutelyPositioned>
-              <div className="hidden xl:flex absolute top-[18rem] left-[8rem]">
-                <img src={yellow} className="w-[25%]" alt="" />
+              <div className="hidden xl:flex absolute top-[18rem] left-[-2rem] ">
+                <img src={hero8} className="w-[100%]" alt="" />
               </div>
             </ScrollParallax>
 
@@ -78,7 +88,7 @@ const Hero = () => {
               <Gradient />
             </div>
 
-            <BackgroundCircles />
+            {/* <BackgroundCircles /> */}
           </div>
         </div>
       </Section>

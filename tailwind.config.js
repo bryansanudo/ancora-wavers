@@ -12,7 +12,7 @@ export default {
     extend: {
       colors: {
         color: {
-          1: "#FECDC2",
+          1: "#FF98E2",
           2: "#FFC876",
           3: "#FF776F",
           4: "#7ADB78",
