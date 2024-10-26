@@ -14,18 +14,18 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const navigation = [
     {
-      id: "4",
+      id: "1",
       title: "Todos los Productos",
       url: "#productos",
     },
     {
-      id: "4",
+      id: "2",
       title: "dozo",
       url: "#dozo",
     },
 
     {
-      id: "4",
+      id: "3",
       title: "Vapes Nicotina",
       url: "#prime",
     },
@@ -35,7 +35,7 @@ const Header = () => {
       url: "#faq",
     },
     {
-      id: "4",
+      id: "5",
       title: "Terminos y condiciones",
       url: "/policy",
     },

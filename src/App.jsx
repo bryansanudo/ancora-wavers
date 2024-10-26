@@ -12,8 +12,8 @@ const App = () => {
   return (
     <>
       <div className="pt-[4.7rem] lg:pt-[5.25rem] overflow-hidden">
-        <Header />
         <Hero />
+        <Header />
         <Benefits />
         <Collaboration />
         <Services />
