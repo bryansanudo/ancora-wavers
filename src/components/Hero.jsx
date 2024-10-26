@@ -1,5 +1,5 @@
 import curve from "@/assets/curve.png";
-import heros from "@/assets/hero.png";
+import heros from "@/assets/hero/hero-video.mp4";
 
 import Section from "@/components/Section";
 import { BackgroundCircles, Gradient } from "@/components/design/Hero";
@@ -81,7 +81,15 @@ const Hero = () => {
                 <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
 
                 <div>
-                  <img src={heros} className="rounded-b-xl   " alt="AI" />
+                  <video
+                    src={heros}
+                    autoPlay
+                    loop
+                    type="video/mp4"
+                    playsInline
+                    muted
+                    className="h-full   w-full  rounded-b-xl "
+                  />
                 </div>
               </div>
 
