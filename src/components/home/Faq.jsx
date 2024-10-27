@@ -1,5 +1,5 @@
 import Section from "@/components/Section";
-import { smallSphere, stars } from "@/assets";
+
 import Heading from "@/components/Heading";
 
 import { LeftLine, RightLine } from "@/components/design/Pricing";

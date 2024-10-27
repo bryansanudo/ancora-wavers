@@ -1,7 +1,17 @@
-import React from "react";
-
+import { Routes, Route } from "react-router-dom";
+import Section from "@/components/Section";
+import HeaderProducts from "@/components/store/HeaderProducts";
+import Backpacks from "@/components/store/Backpacks";
 const Store = () => {
-  return <div>Store</div>;
+  return (
+    <Section>
+      <HeaderProducts />
+
+      <Routes>
+        <Route path="backpacks/*" element={<Backpacks />} />
+      </Routes>
+    </Section>
+  );
 };
 
 export default Store;
