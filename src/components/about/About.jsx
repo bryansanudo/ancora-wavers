@@ -1,11 +1,20 @@
-import Section from "@/components/Section";
-import Hero from "@/components/Hero";
-const About = () => {
+import HeroAbout from "@/components/about/HeroAbout";
+import Footer from "@/components/Footer";
+
+import { useEffect } from "react";
+import StoryAncora from "@/components/about/StoryAncora";
+
+const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <Section>
-      <Hero />
-    </Section>
+    <>
+      <HeroAbout />
+      <StoryAncora />
+      <Footer />
+    </>
   );
 };
 
-export default About;
+export default Home;
