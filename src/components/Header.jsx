@@ -63,12 +63,10 @@ const Header = () => {
           className="block w-[20rem] xl:mr-8 my-3"
           to="/home"
         >
-          <div className="flex items-center justify-start   ">
+          <div className="flex items-center justify-start ml-5 py-2     ">
             <img
               src={logo}
-              className="rounded-full hover:scale-105 duration-300 mr-5"
-              width={80}
-              height={80}
+              className=" hover:scale-105 duration-300 md:w-[150px] md:h-[50px] w-[150px] h-[55px] "
               alt=""
             />
             {/*  <div className="text-center mt-3 text-n text-[12px] md:text-[16px]  text-n-1">

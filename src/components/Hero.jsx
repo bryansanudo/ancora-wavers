@@ -62,7 +62,7 @@ const Hero = () => {
 
             <h1 className="h2 mb-6">
               Explora las poisibilidades con &nbsp;
-              <span className="inline-block relative">
+              {/*  <span className="inline-block relative">
                 Delta Land{" "}
                 <img
                   src={curve}
@@ -71,7 +71,7 @@ const Hero = () => {
                   height={28}
                   alt="Curve"
                 />
-              </span>
+              </span> */}
             </h1>
           </div>
           <X />
