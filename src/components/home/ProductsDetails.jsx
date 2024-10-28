@@ -88,10 +88,15 @@ const ProductsDetails = () => {
                     alt={selectedProduct.name}
                   />
                 </div>
-                <div className="col-span-3 md:col-span-4  xl:mx-40 flex items-center justify-center text-center mb-4 p-4 text-n-4">
+                <div className="col-span-3 md:col-span-4  xl:mx-40 flex flex-col items-center justify-center text-center mb-4 p-4 text-n-4">
                   {selectedProduct.description}
                   <br className="pt-2" />
                   {selectedProduct.description}
+                  <div className="mt-10">
+                    <button className="w-[200px] shadow-sm shadow-gray-600 hover:shadow-red-500 p-2 rounded-xl">
+                      Todos los productos
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
