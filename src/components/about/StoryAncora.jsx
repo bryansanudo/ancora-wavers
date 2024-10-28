@@ -6,7 +6,7 @@ const StoryAncora = () => {
   return (
     <Section
       id="dozo"
-      customPaddings=""
+      customPaddings="md:pt-[120px] pt-[40px]"
       /* crosses */
       crossesOffset="lg:translate-y-[1.25rem]"
     >

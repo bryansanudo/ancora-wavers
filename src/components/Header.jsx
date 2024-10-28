@@ -26,8 +26,8 @@ const Header = () => {
 
     {
       id: "3",
-      title: "Tienda",
-      url: "/store",
+      title: "Hablemos",
+      url: "/",
     },
   ];
   const pathname = useLocation();
@@ -79,19 +79,19 @@ const Header = () => {
             openNavigation ? "flex" : "hidden"
           }  fixed top-[7rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row  md:mr-[230px]">
             {navigation.map((item) => (
               <div key={item.id}>
                 <Link to={item.url}>
                   <div
                     onClick={handleClick}
-                    className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
+                    className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-white ${
                       item.onlyMobile ? "lg:hidden" : ""
                     } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                       item.url === pathname.hash
-                        ? "z-2 lg:text-color-1"
+                        ? "z-2 lg:text-white"
                         : "lg:text-n-1/50"
-                    } lg:leading-5 lg:hover:text-color-1 xl:px-12`}
+                    } lg:leading-5 lg:hover:text-white xl:px-12`}
                   >
                     {item.title}
                   </div>
@@ -100,17 +100,21 @@ const Header = () => {
             ))}
 
             <div onClick={toggleNavigation} className="">
-              <Button className="lg:hidden flex mt-6" href="/productos/dozo">
-                Happy Dogs
-              </Button>
+              <Link to="/store">
+                <Button className="lg:hidden flex mt-6" href="/productos/dozo">
+                  Tienda
+                </Button>
+              </Link>
             </div>
           </div>
           <HamburgerMenu />
         </nav>
 
-        <Button className="hidden lg:flex" href="/productos/dozo">
-          Happy Dogs
-        </Button>
+        <Link to="/store">
+          <Button className="hidden lg:flex" href="/productos/dozo">
+            Tienda
+          </Button>
+        </Link>
         <Button
           className="ml-auto lg:hidden"
           px="px-3"

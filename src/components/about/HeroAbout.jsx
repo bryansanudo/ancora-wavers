@@ -8,8 +8,8 @@ import TagLine from "@/components/Tagline";
 
 const HeroAbout = () => {
   return (
-    <Section crosses>
-      <div className="container lg:flex mt-20 ">
+    <Section crosses customPaddings="mt-[85px] md:mt-0 md:pt-[100px] ">
+      <div className="container lg:flex  ">
         <div className="md:max-w-[35rem] ">
           <div className={` max-w-[50rem] mx-auto mb-12 lg:mb-10 text-center `}>
             {<h2 className="h2 ">Welcome Ancora Wavers</h2>}

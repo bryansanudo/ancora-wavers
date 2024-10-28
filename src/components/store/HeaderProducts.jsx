@@ -69,24 +69,24 @@ const HeaderProducts = () => {
   return (
     <Section
       id="dozo"
-      customPaddings="pt-10 "
+      customPaddings="pt-[80px] md:pt-[40px] "
       /* crosses */
       crossesOffset="lg:translate-y-[1.25rem]"
     >
       <div className="container">
-        <div className={`max-w-[50rem] mx-auto md:text-center`}>
+        <div className={`max-w-[50rem] mx-auto text-center`}>
           <h2 className="h2">Productos</h2>
-          <TagLine className="mb-4 md:justify-center">tag line</TagLine>
+          <TagLine className="mb-4 justify-center">tag line</TagLine>
           <p className="body-2 mt-4 text-n-4">
             Conoce toda la variedad de productos y nuestras nuevas innovaciónes
           </p>
         </div>
 
-        <div className="py-6   ">
-          <ul className="grid md:grid-cols-6 grid-cols-3 md:gap-[60px]  gap-2   py-6   ">
+        <div className="md:py-4 pt-4  ">
+          <ul className="grid md:grid-cols-6 grid-cols-3 md:gap-[60px]  gap-2   md:py-4   ">
             {products.map((product, index) => (
               <Link to={product.url} key={index}>
-                <div className="flex items-center justify-center flex-col mb-8 md:mb-0 cursor-pointer  ">
+                <div className="flex items-center justify-center flex-col mb- md:mb-0 cursor-pointer ">
                   <img
                     src={product.icon}
                     alt=""
