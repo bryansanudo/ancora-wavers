@@ -76,7 +76,7 @@ const Backpacks = () => {
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  w-full gap-2   ">
             {dozo.map(({ id, img, title, price }) => (
               <div key={id}>
-                <div className="border  bg-gray-200   rounded-xl   flex  flex-col overflow-hidden">
+                <div className="border  bg-[#f4f4f4]   rounded-xl   flex  flex-col overflow-hidden">
                   <img src={img} alt="Shoes" />
                   <div className="flex flex-col bg-[#f2f2f2]  h-full   items-center justify-between text-center uppercase py-4">
                     <div className="h6 mx-4">{title}</div>

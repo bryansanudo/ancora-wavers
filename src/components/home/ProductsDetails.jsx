@@ -12,30 +12,54 @@ import dozo6 from "@/assets/dozo/dozo6.png";
 import backpacks from "@/assets/backpacks.jpg";
 import fannypacks from "@/assets/fannypacks.jpg";
 import complements from "@/assets/complements.jpg";
+import iconBackpacks from "@/assets/headerProducts/backpacks.png";
+import iconfannypacks from "@/assets/headerProducts/fannypacks.png";
+import iconbucket from "@/assets/headerProducts/bucket.png";
+import iconcomplements from "@/assets/headerProducts/complements.png";
+import icontshirt from "@/assets/headerProducts/tshirt.png";
+import iconpets from "@/assets/headerProducts/pets.png";
 
 const ProductsDetails = () => {
   // Nombres, descripciones y rutas de imágenes para los productos
   const products = [
     {
+      icon: iconBackpacks,
       name: "Backpacks",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
       image: backpacks,
     },
     {
+      icon: iconfannypacks,
       name: "Fannypacks",
       description:
         "Descripción del Producto 2: Perfecto para tus necesidades diarias.",
       image: fannypacks,
     },
     {
+      icon: iconbucket,
+      name: "Hats",
+      description:
+        "Descripción del Producto 4: Calidad y rendimiento superior.",
+      image: dozo4,
+    },
+    {
+      icon: iconcomplements,
       name: "Complementos",
       description:
         "Descripción del Producto 3: Diseño y funcionalidad impecables.",
       image: complements,
     },
     {
-      name: "Happy Dogs",
+      icon: icontshirt,
+      name: "T-Shirt",
+      description:
+        "Descripción del Producto 4: Calidad y rendimiento superior.",
+      image: dozo4,
+    },
+    {
+      icon: iconpets,
+      name: "Mascotas",
       description:
         "Descripción del Producto 4: Calidad y rendimiento superior.",
       image: dozo4,
@@ -55,28 +79,35 @@ const ProductsDetails = () => {
         <div className={`max-w-[50rem] mx-auto md:text-center`}>
           <h2 className="h2">Productos</h2>
           <TagLine className="mb-4 md:justify-center">tag line</TagLine>
-          <p className="body-2 mt-4 text-n-4">
-            Conoce toda la variedad de productos y nuestras nuevas innovaciónes
-          </p>
+          <p className="body-2 mt-4 text-n-4">Comprar por categoría</p>
         </div>
 
         <div className="relative">
           <div className="relative z-1 grid gap-5 lg:grid-cols-1  ">
-            <div className="p-4 flex flex-col justify-between rounded-3xl overflow-hidden lg:min-h-[35rem]">
+            <div className="p-1 flex flex-col justify-between rounded-3xl overflow-hidden lg:min-h-[35rem]">
               <div className="py-6   ">
-                <ul className="flex flex-col md:flex-row items-center justify-between py-6 shadow-sm rounded-xl shadow-gray-600">
+                <ul className="grid md:grid-cols-6 grid-cols-3 md:gap-[60px]     py-6   ">
                   {products.map((product, index) => (
-                    <li
+                    <div
                       key={index}
+                      className="flex items-center justify-center   flex-col mb-8 md:mb-0 cursor-pointer  "
                       onClick={() => setSelectedProduct(product)}
-                      className={`cursor-pointer  py- mx-10  ${
-                        selectedProduct.name === product.name
-                          ? "h6 border-b border-gray-500"
-                          : "h6"
-                      }`}
                     >
-                      {product.name}
-                    </li>
+                      <img
+                        src={product.icon}
+                        alt=""
+                        className="md:w-full w-[80%]"
+                      />
+                      <li
+                        className={`cursor-pointer  mt-2   ${
+                          selectedProduct.name === product.name
+                            ? "md:text-[16px] text-[12px] border-b border-gray-500"
+                            : "md:text-[16px] text-[12px]"
+                        }`}
+                      >
+                        {product.name}
+                      </li>
+                    </div>
                   ))}
                 </ul>
               </div>
