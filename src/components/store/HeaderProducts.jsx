@@ -45,7 +45,7 @@ const HeaderProducts = () => {
       description:
         "Descripción del Producto 2: Perfecto para tus necesidades diarias.",
       image: fannypacks,
-      url: "/store/fannypacks",
+      url: "/store/hats",
       icon: iconbucket,
     },
     {
