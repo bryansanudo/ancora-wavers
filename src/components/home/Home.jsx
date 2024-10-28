@@ -1,6 +1,4 @@
-import Hero from "@/components/Hero";
-import Benefits from "@/components/Benefits";
-
+import Hero from "@/components/home/Hero";
 import ProductsDetails from "@/components/home/ProductsDetails";
 import Footer from "@/components/Footer";
 import Faq from "@/components/home/Faq";

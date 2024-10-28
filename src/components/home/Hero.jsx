@@ -1,25 +1,18 @@
-import curve from "@/assets/curve.png";
 import heros from "@/assets/hero/hero-video.mp4";
 
 import Section from "@/components/Section";
-import { BackgroundCircles, Gradient } from "@/components/design/Hero";
+import { Gradient } from "@/components/design/Hero";
 import { Gradient as X } from "@/components/design/Services";
 
 import { useRef } from "react";
 import { ScrollParallax } from "react-just-parallax";
-
-import pink from "@/assets/diamond-pink.png";
-import blue from "@/assets/diamond-blue.png";
-import yellow from "@/assets/diamond-yellow.png";
 
 import hero0 from "@/assets/hero/hero0.png";
 import hero1 from "@/assets/hero/hero1.png";
 import hero2 from "@/assets/hero/hero2.png";
 import hero3 from "@/assets/hero/hero3.png";
 import hero4 from "@/assets/hero/hero4.png";
-import hero5 from "@/assets/hero/hero5.png";
-import hero6 from "@/assets/hero/hero6.png";
-import hero7 from "@/assets/hero/hero7.png";
+
 import hero8 from "@/assets/hero/hero8.png";
 const Hero = () => {
   const parallaxRef = useRef(null);

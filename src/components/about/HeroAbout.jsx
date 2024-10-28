@@ -1,10 +1,7 @@
 import Section from "@/components/Section";
-import { collabContent, collabText, collabApps } from "@/constants";
-import { check, brainwaveSymbol } from "@/assets";
-import Button from "@/components/Button";
-import { LeftCurve, RightCurve } from "@/components/design/Collaboration";
+
 import CardsAbout from "@/components/about/CardsAbout";
-import tha from "@/assets/tha.png";
+
 import { GradientAbout as X } from "@/components/design/Services";
 import heroImage from "@/assets/about-01.png";
 import TagLine from "@/components/Tagline";

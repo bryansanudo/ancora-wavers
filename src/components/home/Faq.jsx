@@ -1,7 +1,5 @@
 import Section from "@/components/Section";
 
-import Heading from "@/components/Heading";
-
 import { LeftLine, RightLine } from "@/components/design/Pricing";
 
 import FaqQuestions from "@/components/home/FaqQuestions";

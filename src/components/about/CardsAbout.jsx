@@ -1,6 +1,3 @@
-import styles, { layout } from "@/style";
-
-import { Link } from "react-router-dom";
 /* import { motion } from "framer-motion";
 import { staggerContainer, zoomIn, fadeIn } from "@/utils/motion"; */
 import { GrCertificate } from "react-icons/gr";

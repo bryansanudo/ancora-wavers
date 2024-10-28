@@ -1,17 +1,4 @@
 import Section from "@/components/Section";
-import { Gradient } from "@/components/design/Services";
-import { useState } from "react";
-import Button from "@/components/Button";
-import TagLine from "@/components/Tagline";
-
-import dozo1 from "@/assets/dozo/dozo1.png";
-import dozo2 from "@/assets/dozo/dozo2.png";
-import dozo3 from "@/assets/dozo/dozo3.png";
-import dozo4 from "@/assets/dozo/dozo4.png";
-import dozo6 from "@/assets/dozo/dozo6.png";
-import backpacks from "@/assets/backpacks.jpg";
-import fannypacks from "@/assets/fannypacks.jpg";
-import complements from "@/assets/complements.jpg";
 
 import hat1 from "@/assets/store/hats/hat1.webp";
 import hat2 from "@/assets/store/hats/hat2.webp";

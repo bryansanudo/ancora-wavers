@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Section from "@/components/Section";
+
 import HeaderProducts from "@/components/store/HeaderProducts";
 import Backpacks from "@/components/store/backpacks/Backpacks";
 import Fannypacks from "@/components/store/fannypacks/Fannypacks";

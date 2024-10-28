@@ -1,10 +1,6 @@
 import Section from "@/components/Section";
 
-import { Gradient } from "@/components/design/Services";
-
 import aboutImage from "@/assets/about.png";
-
-import TagLine from "@/components/Tagline";
 
 const StoryAncora = () => {
   return (
