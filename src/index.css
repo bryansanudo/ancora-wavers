@@ -20,7 +20,7 @@
 
 @layer base {
   body {
-    @apply font-sans bg-[#f2f2f2] text-n-5 text-base;
+    @apply font-sans bg-white text-n-5 text-base;
   }
 }
 

@@ -78,7 +78,7 @@ const Backpacks = () => {
               <div key={id}>
                 <div className="border  bg-[#f4f4f4]   rounded-xl   flex  flex-col overflow-hidden">
                   <img src={img} alt="Shoes" />
-                  <div className="flex flex-col bg-[#f2f2f2]  h-full   items-center justify-between text-center uppercase py-4">
+                  <div className="flex flex-col bg-white  h-full   items-center justify-between text-center uppercase py-4">
                     <div className="h6 mx-4">{title}</div>
                     <div className="py-4">
                       <span className="mr-1">$</span>
