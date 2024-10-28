@@ -13,34 +13,39 @@ import backpacks from "@/assets/backpacks.jpg";
 import fannypacks from "@/assets/fannypacks.jpg";
 import complements from "@/assets/complements.jpg";
 
+import backpack1 from "@/assets/store/backpacks/backpack1.webp";
+import backpack2 from "@/assets/store/backpacks/backpack2.webp";
+import backpack3 from "@/assets/store/backpacks/backpack3.webp";
+import backpack4 from "@/assets/store/backpacks/backpack4.webp";
+
 const Backpacks = () => {
   const dozo = [
     {
       id: 1,
       title: "sour tangie patch sativa",
       price: "90.000",
-      img: dozo1,
+      img: backpack1,
       priceOff: "$180.000",
     },
     {
       id: 2,
       title: "watermelon zkittlez sativa",
       price: "90.000",
-      img: dozo2,
+      img: backpack2,
       priceOff: "$180.000",
     },
     {
       id: 3,
       title: "watermelon zkittlez sativa",
       price: "90.000",
-      img: dozo3,
+      img: backpack3,
       priceOff: "$180.000",
     },
     {
       id: 4,
       title: "watermelon zkittlez sativa",
       price: "90.000",
-      img: dozo4,
+      img: backpack4,
       priceOff: "$180.000",
     },
   ];
@@ -51,16 +56,16 @@ const Backpacks = () => {
       customPaddings="pt-8 md:pb-14"
       crossesOffset="lg:translate-y-[1.25rem]"
     >
-      <div className="max-w-[1500px] mx-auto">
+      <div className="max-w-[1500px] mx-auto md:px-10">
         <div className="flex items-center justify-center rounded-xl overflow-hidden md:min-h-[24rem] mx-4">
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full gap-2">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 w-full gap-2">
             {dozo.map(({ id, img, title, price, priceOff }) => (
               <div
                 key={id}
-                className=" bg-[#f4f4f4] rounded-2xl flex flex-col overflow-hidden relative group"
+                className=" bg-[#f4f4f4] rounded-2xl flex flex-col overflow-hidden relative group cursor-pointer"
               >
                 {/* Imagen con botón de Más información en hover */}
-                <div className="relative">
+                <div className="relative  ">
                   <img
                     src={img}
                     alt="Producto"
@@ -68,23 +73,23 @@ const Backpacks = () => {
                   />
 
                   {/* Etiqueta de 30% de descuento */}
-                  <div className="absolute top-2 left-2 bg-n-6 text-white text-xs font-bold px-2 py-1 rounded">
-                    30% OFF
+                  <div className="absolute top-4 left-4 bg-n-6 text-white text-xs font-bold px-2 py-1 rounded">
+                    50% OFF
                   </div>
 
                   {/* Botón de Más información en hover */}
                   <div className="absolute inset-0 bg-n-6 bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <button className="text-white bg-blue-500 px-4 py-2 rounded-md">
+                    <button className="text-white bg-n-6 px-4 py-3 rounded-xl">
                       Más información
                     </button>
                   </div>
                 </div>
 
                 {/* Información del producto */}
-                <div className=" bg-white h-full  text-[#6B6B6B]    ">
-                  <div className="h6 mt-1 ">{title}</div>
+                <div className=" bg-[] h-full pt-1  pl-1  text-[#6B6B6B]    ">
+                  <div className="h6 mt-1  ">{title}</div>
                 </div>
-                <div className="bg-white font-bold flex gap-3">
+                <div className=" font-bold pl-1 flex gap-3 pb-6">
                   <div>
                     <span className="mr-1 ">$</span>
                     {price}

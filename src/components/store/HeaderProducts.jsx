@@ -77,7 +77,7 @@ const HeaderProducts = () => {
   return (
     <Section
       id="dozo"
-      customPaddings="pt-36 md:pt-28 "
+      customPaddings="pt-10 "
       /* crosses */
       crossesOffset="lg:translate-y-[1.25rem]"
     >
@@ -91,13 +91,10 @@ const HeaderProducts = () => {
         </div>
 
         <div className="py-6   ">
-          <ul className="grid md:grid-cols-6 grid-cols-3 md:gap-[60px]     py-6   ">
+          <ul className="grid md:grid-cols-6 grid-cols-3 md:gap-[60px]  gap-2   py-6   ">
             {products.map((product, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center   flex-col mb-8 md:mb-0 cursor-pointer  "
-              >
-                <Link to={product.url}>
+              <Link to={product.url} key={index}>
+                <div className="flex items-center justify-center flex-col mb-8 md:mb-0 cursor-pointer  ">
                   <img
                     src={product.icon}
                     alt=""
@@ -108,8 +105,8 @@ const HeaderProducts = () => {
                   >
                     {product.name}
                   </li>
-                </Link>
-              </div>
+                </div>
+              </Link>
             ))}
           </ul>
         </div>
