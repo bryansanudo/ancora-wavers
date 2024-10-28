@@ -1,16 +1,8 @@
 import Section from "@/components/Section";
-import Heading from "@/components/Heading";
 
 import { Gradient } from "@/components/design/Services";
 
-import { useRef, useState } from "react";
-
-import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
-
-import tha from "@/assets/tha.png";
-import tha2 from "@/assets/tha2.jpeg";
-
-import Button from "@/components/Button";
+import aboutImage from "@/assets/about.png";
 
 import TagLine from "@/components/Tagline";
 
@@ -24,12 +16,12 @@ const StoryAncora = () => {
     >
       <div className="container ">
         <div
-          className={` max-w-[50rem] mx-auto mb-12 lg:mb-10 md:text-center bg-red-500`}
+          className={` max-w-[50rem] mx-auto mb-12 lg:mb-10 md:text-center `}
         >
-          {<h2 className="h2">THC A Mushroom</h2>}
+          {<h2 className="h2">Welcome Ancora Wavers</h2>}
           {
             <TagLine className="mb-4 md:justify-center ">
-              Indica - Sativa - Hibrida
+              Nuestra Historia
             </TagLine>
           }
           {}
@@ -37,45 +29,42 @@ const StoryAncora = () => {
 
         <div className="relative  ">
           <div className="relative z-1 grid gap-5 lg:grid-cols-1">
-            {/* <div className=" relative min-h-[39rem] border border-n-1/10   rounded-3xl overflow-hidden">
-              <div className="absolute inset-0 z-50">
-                <img
-                  src={tha2}
-                  className="h-full w-full object-cover "
-                  alt="robot"
-                />
-              </div>
-            </div> */}
-
-            <div className="p-4 flex flex-col justify-between border border-red-800  rounded-3xl overflow-hidden lg:min-h-[35rem] max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center ">
+            <div className=" flex flex-col justify-between border border-red-800  rounded-3xl overflow-hidden lg:min-h-[35rem] max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center ">
               <div className="py-6 px-2">
                 <p className="body-2 mt-4 text-n-4 text-center">
-                  Cada desechable está diseñado por expertos para ofrecer una
-                  experiencia consistente y agradable en todo momento, teniendo
-                  en cuenta la comodidad, cada Dozo + THCA contiene 2,5 gramos,
-                  siendo elegante y portátil para usarlo en cualquier lugar.
-                  <br />
-                  Acepta el poder de la naturaleza y desbloquea un nuevo nivel.
+                  Soy Sara, fundadora de Áncorawave, un sueño que nació hace
+                  cinco años y que ha crecido con dedicación y pasión. Desde mis
+                  primeros recuerdos, la creatividad y el impulso de compartir
+                  ideas han sido parte de mi vida. Comencé vendiendo pequeños
+                  accesorios y creando productos únicos, hasta que, mientras
+                  estudiaba Diseño Industrial, descubrí mi verdadera
+                  inspiración: un artesano orfebre de Santa Elena que recorría
+                  kilómetros para mostrar su arte. Así surgió Áncorawave, con el
+                  propósito de dar vida a accesorios que combinan tradición y
+                  diseño.
+                </p>
+                <p className="body-2 mt-4 text-n-4 text-center">
+                  Cada pieza de Áncorawave es una fusión de ideas, bocetos y
+                  materiales cuidadosamente seleccionados. Confeccionamos
+                  accesorios de cuero y bolsos únicos, hechos a mano en
+                  Colombia, que reflejan nuestra herencia artesanal y el encanto
+                  de lo hecho a mano.
+                </p>
+                <p className="body-2 mt-4 text-n-4 text-center">
+                  Gracias por formar parte de nuestra comunidad. Aquí, cada
+                  accesorio cuenta una historia, y esperamos que la lleves
+                  contigo en cada paso de tu camino.
                 </p>
               </div>
 
-              <div className="relative    border-n-1/10  rounded-xl overflow-hidden md:h-[24rem]">
+              <div className="     rounded-b-xl overflow-hidden ]">
                 <img
-                  src={tha}
+                  src={aboutImage}
                   className="w-full h-full object-contain"
-                  alt="Selected"
                 />
               </div>
             </div>
           </div>
-
-          <div className="mt-6 w-full flex items-center justify-center">
-            <a href="#productos">
-              <Button className="flex">Descubre Dozo</Button>
-            </a>
-          </div>
-
-          <Gradient />
         </div>
       </div>
     </Section>
