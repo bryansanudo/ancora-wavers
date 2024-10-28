@@ -13,67 +13,67 @@ import backpacks from "@/assets/backpacks.jpg";
 import fannypacks from "@/assets/fannypacks.jpg";
 import complements from "@/assets/complements.jpg";
 
-import backpack1 from "@/assets/store/backpacks/backpack1.webp";
-import backpack2 from "@/assets/store/backpacks/backpack2.webp";
-import backpack3 from "@/assets/store/backpacks/backpack3.webp";
-import backpack4 from "@/assets/store/backpacks/backpack4.webp";
+import complement1 from "@/assets/store/complements/complement1.webp";
+import complement2 from "@/assets/store/complements/complement2.webp";
+import complement3 from "@/assets/store/complements/complement3.webp";
+import complement4 from "@/assets/store/complements/complement4.webp";
 
-const Backpacks = () => {
+const Complements = () => {
   const dozo = [
     {
       id: 1,
-      title: "backpack1",
+      title: "complement1",
       price: "90.000",
-      img: backpack1,
+      img: complement1,
       priceOff: "$180.000",
     },
     {
       id: 2,
-      title: "backpack2",
+      title: "complement2",
       price: "90.000",
-      img: backpack2,
+      img: complement2,
       priceOff: "$180.000",
     },
     {
       id: 3,
-      title: "backpack3",
+      title: "complement3",
       price: "90.000",
-      img: backpack3,
+      img: complement3,
       priceOff: "$180.000",
     },
     {
       id: 4,
-      title: "backpack4",
+      title: "complement4",
       price: "90.000",
-      img: backpack4,
+      img: complement4,
       priceOff: "$180.000",
     },
     {
       id: 5,
-      title: "backpack5",
+      title: "complement5",
       price: "90.000",
-      img: backpack1,
+      img: complement1,
       priceOff: "$180.000",
     },
     {
       id: 6,
-      title: "backpack6",
+      title: "complement6",
       price: "90.000",
-      img: backpack2,
+      img: complement2,
       priceOff: "$180.000",
     },
     {
       id: 7,
-      title: "backpack7",
+      title: "complement7",
       price: "90.000",
-      img: backpack3,
+      img: complement3,
       priceOff: "$180.000",
     },
     {
       id: 8,
-      title: "backpack8",
+      title: "complement8",
       price: "90.000",
-      img: backpack4,
+      img: complement4,
       priceOff: "$180.000",
     },
   ];
@@ -133,4 +133,4 @@ const Backpacks = () => {
   );
 };
 
-export default Backpacks;
+export default Complements;

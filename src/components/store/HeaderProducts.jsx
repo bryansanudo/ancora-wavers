@@ -61,7 +61,7 @@ const HeaderProducts = () => {
       description:
         "Descripción del Producto 3: Diseño y funcionalidad impecables.",
       image: complements,
-      url: "/store/complements",
+      url: "/store/tshirts",
       icon: icontshirt,
     },
     {
@@ -69,7 +69,7 @@ const HeaderProducts = () => {
       description:
         "Descripción del Producto 4: Calidad y rendimiento superior.",
       image: dozo4,
-      iconpets,
+      url: "/store/pets",
       icon: iconpets,
     },
   ];

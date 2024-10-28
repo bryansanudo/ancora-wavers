@@ -13,67 +13,67 @@ import backpacks from "@/assets/backpacks.jpg";
 import fannypacks from "@/assets/fannypacks.jpg";
 import complements from "@/assets/complements.jpg";
 
-import backpack1 from "@/assets/store/backpacks/backpack1.webp";
-import backpack2 from "@/assets/store/backpacks/backpack2.webp";
-import backpack3 from "@/assets/store/backpacks/backpack3.webp";
-import backpack4 from "@/assets/store/backpacks/backpack4.webp";
+import pet1 from "@/assets/store/pets/pet1.webp";
+import pet2 from "@/assets/store/pets/pet2.webp";
+import pet3 from "@/assets/store/pets/pet3.webp";
+import pet4 from "@/assets/store/pets/pet4.webp";
 
-const Backpacks = () => {
+const Pets = () => {
   const dozo = [
     {
       id: 1,
-      title: "backpack1",
+      title: "pet1",
       price: "90.000",
-      img: backpack1,
+      img: pet1,
       priceOff: "$180.000",
     },
     {
       id: 2,
-      title: "backpack2",
+      title: "pet2",
       price: "90.000",
-      img: backpack2,
+      img: pet2,
       priceOff: "$180.000",
     },
     {
       id: 3,
-      title: "backpack3",
+      title: "pet3",
       price: "90.000",
-      img: backpack3,
+      img: pet3,
       priceOff: "$180.000",
     },
     {
       id: 4,
-      title: "backpack4",
+      title: "pet4",
       price: "90.000",
-      img: backpack4,
+      img: pet4,
       priceOff: "$180.000",
     },
     {
       id: 5,
-      title: "backpack5",
+      title: "pet5",
       price: "90.000",
-      img: backpack1,
+      img: pet1,
       priceOff: "$180.000",
     },
     {
       id: 6,
-      title: "backpack6",
+      title: "pet6",
       price: "90.000",
-      img: backpack2,
+      img: pet2,
       priceOff: "$180.000",
     },
     {
       id: 7,
-      title: "backpack7",
+      title: "pet7",
       price: "90.000",
-      img: backpack3,
+      img: pet3,
       priceOff: "$180.000",
     },
     {
       id: 8,
-      title: "backpack8",
+      title: "pet8",
       price: "90.000",
-      img: backpack4,
+      img: pet4,
       priceOff: "$180.000",
     },
   ];
@@ -133,4 +133,4 @@ const Backpacks = () => {
   );
 };
 
-export default Backpacks;
+export default Pets;
