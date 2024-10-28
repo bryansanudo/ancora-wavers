@@ -17,74 +17,79 @@ const Backpacks = () => {
   const dozo = [
     {
       id: 1,
-      title: "sour tangie patch sativa ",
-      price: "180.000",
+      title: "sour tangie patch sativa",
+      price: "90.000",
       img: dozo1,
+      priceOff: "$180.000",
     },
     {
       id: 2,
-      title: "watermelon zkittlez sativa ",
-      price: "180.000",
+      title: "watermelon zkittlez sativa",
+      price: "90.000",
       img: dozo2,
+      priceOff: "$180.000",
     },
     {
-      id: 2,
-      title: "watermelon zkittlez sativa ",
-      price: "180.000",
+      id: 3,
+      title: "watermelon zkittlez sativa",
+      price: "90.000",
       img: dozo3,
+      priceOff: "$180.000",
     },
     {
-      id: 2,
-      title: "watermelon zkittlez sativa ",
-      price: "180.000",
+      id: 4,
+      title: "watermelon zkittlez sativa",
+      price: "90.000",
       img: dozo4,
-    },
-    {
-      id: 1,
-      title: "sour tangie patch sativa ",
-      price: "180.000",
-      img: dozo1,
-    },
-    {
-      id: 2,
-      title: "watermelon zkittlez sativa ",
-      price: "180.000",
-      img: dozo2,
-    },
-    {
-      id: 2,
-      title: "watermelon zkittlez sativa ",
-      price: "180.000",
-      img: dozo3,
-    },
-    {
-      id: 2,
-      title: "watermelon zkittlez sativa ",
-      price: "180.000",
-      img: dozo4,
+      priceOff: "$180.000",
     },
   ];
+
   return (
     <Section
       id="dozo"
       customPaddings="pt-8 md:pb-14"
-      /* crosses */
       crossesOffset="lg:translate-y-[1.25rem]"
     >
       <div className="max-w-[1500px] mx-auto">
-        <div className="flex items-center justify-center  rounded-xl overflow-hidden md:min-h-[24rem] mx-4 ">
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  w-full gap-2   ">
-            {dozo.map(({ id, img, title, price }) => (
-              <div key={id}>
-                <div className="border  bg-[#f4f4f4]   rounded-xl   flex  flex-col overflow-hidden">
-                  <img src={img} alt="Shoes" />
-                  <div className="flex flex-col bg-white  h-full   items-center justify-between text-center uppercase py-4">
-                    <div className="h6 mx-4">{title}</div>
-                    <div className="py-4">
-                      <span className="mr-1">$</span>
-                      {price}
-                    </div>
+        <div className="flex items-center justify-center rounded-xl overflow-hidden md:min-h-[24rem] mx-4">
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full gap-2">
+            {dozo.map(({ id, img, title, price, priceOff }) => (
+              <div
+                key={id}
+                className=" bg-[#f4f4f4] rounded-2xl flex flex-col overflow-hidden relative group"
+              >
+                {/* Imagen con botón de Más información en hover */}
+                <div className="relative">
+                  <img
+                    src={img}
+                    alt="Producto"
+                    className="w-full h-full object-cover  "
+                  />
+
+                  {/* Etiqueta de 30% de descuento */}
+                  <div className="absolute top-2 left-2 bg-n-6 text-white text-xs font-bold px-2 py-1 rounded">
+                    30% OFF
                   </div>
+
+                  {/* Botón de Más información en hover */}
+                  <div className="absolute inset-0 bg-n-6 bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button className="text-white bg-blue-500 px-4 py-2 rounded-md">
+                      Más información
+                    </button>
+                  </div>
+                </div>
+
+                {/* Información del producto */}
+                <div className=" bg-white h-full  text-[#6B6B6B]    ">
+                  <div className="h6 mt-1 ">{title}</div>
+                </div>
+                <div className="bg-white font-bold flex gap-3">
+                  <div>
+                    <span className="mr-1 ">$</span>
+                    {price}
+                  </div>
+                  <div className="text-gray-400 line-through ">{priceOff}</div>
                 </div>
               </div>
             ))}
