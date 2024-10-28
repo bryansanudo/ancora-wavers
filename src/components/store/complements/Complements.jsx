@@ -4,8 +4,12 @@ import complement1 from "@/assets/store/complements/complement1.webp";
 import complement2 from "@/assets/store/complements/complement2.webp";
 import complement3 from "@/assets/store/complements/complement3.webp";
 import complement4 from "@/assets/store/complements/complement4.webp";
+import { useEffect } from "react";
 
 const Complements = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const dozo = [
     {
       id: 1,

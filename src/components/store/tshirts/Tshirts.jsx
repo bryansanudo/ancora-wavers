@@ -4,8 +4,12 @@ import tshirt1 from "@/assets/store/tshirts/tshirt1.webp";
 import tshirt2 from "@/assets/store/tshirts/tshirt2.webp";
 import tshirt3 from "@/assets/store/tshirts/tshirt3.webp";
 import tshirt4 from "@/assets/store/tshirts/tshirt4.webp";
+import { useEffect } from "react";
 
 const Tshirts = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const dozo = [
     {
       id: 1,

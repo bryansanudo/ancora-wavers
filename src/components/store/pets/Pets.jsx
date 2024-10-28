@@ -4,8 +4,12 @@ import pet1 from "@/assets/store/pets/pet1.webp";
 import pet2 from "@/assets/store/pets/pet2.webp";
 import pet3 from "@/assets/store/pets/pet3.webp";
 import pet4 from "@/assets/store/pets/pet4.webp";
+import { useEffect } from "react";
 
 const Pets = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const dozo = [
     {
       id: 1,

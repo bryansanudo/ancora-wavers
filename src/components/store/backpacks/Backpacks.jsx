@@ -4,8 +4,12 @@ import backpack1 from "@/assets/store/backpacks/backpack1.webp";
 import backpack2 from "@/assets/store/backpacks/backpack2.webp";
 import backpack3 from "@/assets/store/backpacks/backpack3.webp";
 import backpack4 from "@/assets/store/backpacks/backpack4.webp";
+import { useEffect } from "react";
 
 const Backpacks = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const dozo = [
     {
       id: 1,

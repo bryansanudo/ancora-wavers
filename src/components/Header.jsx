@@ -61,7 +61,7 @@ const Header = () => {
         <Link
           onClick={scrollTop}
           className="block w-[20rem] xl:mr-8 my-3"
-          to="/home"
+          to="/"
         >
           <div className="flex items-center justify-start ml-5 py-2     ">
             <img

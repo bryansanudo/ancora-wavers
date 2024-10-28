@@ -4,8 +4,12 @@ import fannypack1 from "@/assets/store/fannypacks/fannypack1.webp";
 import fannypack2 from "@/assets/store/fannypacks/fannypack2.webp";
 import fannypack3 from "@/assets/store/fannypacks/fannypack3.webp";
 import fannypack4 from "@/assets/store/fannypacks/fannypack4.webp";
+import { useEffect } from "react";
 
 const Fannypacks = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const dozo = [
     {
       id: 1,

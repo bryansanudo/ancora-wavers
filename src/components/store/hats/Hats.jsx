@@ -4,8 +4,12 @@ import hat1 from "@/assets/store/hats/hat1.webp";
 import hat2 from "@/assets/store/hats/hat2.webp";
 import hat3 from "@/assets/store/hats/hat3.webp";
 import hat4 from "@/assets/store/hats/hat4.webp";
+import { useEffect } from "react";
 
 const Hats = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const dozo = [
     {
       id: 1,
