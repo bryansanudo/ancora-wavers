@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import TagLine from "@/components/Tagline";
 
-import backpacks from "@/assets/backpacks.jpg";
 import fannypacks from "@/assets/fannypacks.jpg";
 import complements from "@/assets/complements.jpg";
 import iconBackpacks from "@/assets/headerProducts/backpacks.png";
@@ -24,7 +23,7 @@ const ProductsDetails = () => {
       name: "Backpacks",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
-      image: backpacks,
+      image: fannypacks,
       url: "/store/backpacks",
     },
     {

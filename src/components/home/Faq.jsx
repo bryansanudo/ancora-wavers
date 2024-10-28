@@ -1,7 +1,5 @@
 import Section from "@/components/Section";
 
-import { LeftLine, RightLine } from "@/components/design/Pricing";
-
 import FaqQuestions from "@/components/home/FaqQuestions";
 
 const Faq = () => {
@@ -17,8 +15,6 @@ const Faq = () => {
         <h2 className="h2 text-center">Preguntas Frecuentes</h2>
         <div className="relative">
           <FaqQuestions />
-          <LeftLine />
-          <RightLine />
         </div>
       </div>
     </Section>
