@@ -101,7 +101,7 @@ const Header = () => {
 
             <div onClick={toggleNavigation} className="">
               <Button className="lg:hidden flex mt-6" href="/productos/dozo">
-                Conoce nuestra nueva linea
+                Happy Dogs
               </Button>
             </div>
           </div>
@@ -109,7 +109,7 @@ const Header = () => {
         </nav>
 
         <Button className="hidden lg:flex" href="/productos/dozo">
-          Conoce nuestra nueva linea
+          Happy Dogs
         </Button>
         <Button
           className="ml-auto lg:hidden"

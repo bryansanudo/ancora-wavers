@@ -9,38 +9,36 @@ import dozo2 from "@/assets/dozo/dozo2.png";
 import dozo3 from "@/assets/dozo/dozo3.png";
 import dozo4 from "@/assets/dozo/dozo4.png";
 import dozo6 from "@/assets/dozo/dozo6.png";
+import backpacks from "@/assets/backpacks.jpg";
+import fannypacks from "@/assets/fannypacks.jpg";
+import complements from "@/assets/complements.jpg";
 
 const ProductsDetails = () => {
   // Nombres, descripciones y rutas de imágenes para los productos
   const products = [
     {
-      name: "Producto 1",
-      description: "Descripción del Producto 1: Innovador y único en su tipo.",
-      image: dozo1,
+      name: "Backpacks",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
+      image: backpacks,
     },
     {
-      name: "Producto 2",
+      name: "Fannypacks",
       description:
         "Descripción del Producto 2: Perfecto para tus necesidades diarias.",
-      image: dozo2,
+      image: fannypacks,
     },
     {
-      name: "Producto 3",
+      name: "Complementos",
       description:
         "Descripción del Producto 3: Diseño y funcionalidad impecables.",
-      image: dozo3,
+      image: complements,
     },
     {
-      name: "Producto 4",
+      name: "Happy Dogs",
       description:
         "Descripción del Producto 4: Calidad y rendimiento superior.",
       image: dozo4,
-    },
-    {
-      name: "Producto 5",
-      description:
-        "Descripción del Producto 5: La elección preferida de los usuarios.",
-      image: dozo6,
     },
   ];
 
@@ -67,16 +65,16 @@ const ProductsDetails = () => {
 
         <div className="relative">
           <div className="relative z-1 grid gap-5 lg:grid-cols-1  ">
-            <div className="p-4 flex flex-col justify-between border  border-n-1/10 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[35rem]">
-              <div className="py-6 px-2  ">
-                <ul className="flex items-center justify-between py-6">
+            <div className="p-4 flex flex-col justify-between rounded-3xl overflow-hidden lg:min-h-[35rem]">
+              <div className="py-6   ">
+                <ul className="flex flex-col md:flex-row items-center justify-between py-6 shadow-sm rounded-xl shadow-gray-600">
                   {products.map((product, index) => (
                     <li
                       key={index}
                       onClick={() => setSelectedProduct(product)}
                       className={`cursor-pointer px-4 py-2 rounded-xl ${
                         selectedProduct.name === product.name
-                          ? "bg-n-8 text-white"
+                          ? "bg-n-8 text-red-500"
                           : "text-n-4"
                       }`}
                     >
@@ -85,27 +83,25 @@ const ProductsDetails = () => {
                   ))}
                 </ul>
               </div>
-
-              <div className="relative border border-n-1/10 bg-n-8 rounded-xl overflow-hidden md:h-[24rem] p-4 ">
-                <p className="text-white text-center mb-4">
+              <div className="grid md:grid-cols-6 grid-cols-1 items-center justify-center shadow-sm shadow-gray-600 rounded-xl overflow-hidden md:h-[24rem]">
+                <div className="col-span-3 md:col-span-2 h-[24rem]  w-full md:rounded-none">
+                  <img
+                    src={selectedProduct.image}
+                    className="w-full h-full object-cover"
+                    alt={selectedProduct.name}
+                  />
+                </div>
+                <div className="col-span-3 md:col-span-4  md:mx-40 flex items-center justify-center text-center mb-4 p-4">
                   {selectedProduct.description}
-                </p>
-                <img
-                  src={selectedProduct.image}
-                  className="w-full h-full object-contain rounded-xl"
-                  alt={selectedProduct.name}
-                />
+                  <br className="pt-2" />
+                  {selectedProduct.description}
+                </div>
               </div>
+              ----
             </div>
           </div>
 
-          <div className="mt-6 w-full flex items-center justify-center">
-            <a href="#productos">
-              <Button className="flex">Descubre Dozo</Button>
-            </a>
-          </div>
-
-          <Gradient />
+          {/*  <Gradient /> */}
         </div>
       </div>
     </Section>
