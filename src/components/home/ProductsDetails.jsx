@@ -19,6 +19,8 @@ import iconcomplements from "@/assets/headerProducts/complements.png";
 import icontshirt from "@/assets/headerProducts/tshirt.png";
 import iconpets from "@/assets/headerProducts/pets.png";
 
+import { Link } from "react-router-dom";
+
 const ProductsDetails = () => {
   // Nombres, descripciones y rutas de imágenes para los productos
   const products = [
@@ -28,6 +30,7 @@ const ProductsDetails = () => {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
       image: backpacks,
+      url: "/store/backpacks",
     },
     {
       icon: iconfannypacks,
@@ -35,6 +38,7 @@ const ProductsDetails = () => {
       description:
         "Descripción del Producto 2: Perfecto para tus necesidades diarias.",
       image: fannypacks,
+      url: "/store/fannypacks",
     },
     {
       icon: iconbucket,
@@ -42,6 +46,7 @@ const ProductsDetails = () => {
       description:
         "Descripción del Producto 4: Calidad y rendimiento superior.",
       image: dozo4,
+      url: "/store/hats",
     },
     {
       icon: iconcomplements,
@@ -49,6 +54,7 @@ const ProductsDetails = () => {
       description:
         "Descripción del Producto 3: Diseño y funcionalidad impecables.",
       image: complements,
+      url: "/store/complements",
     },
     {
       icon: icontshirt,
@@ -56,6 +62,7 @@ const ProductsDetails = () => {
       description:
         "Descripción del Producto 4: Calidad y rendimiento superior.",
       image: dozo4,
+      url: "/store/tshirts",
     },
     {
       icon: iconpets,
@@ -63,6 +70,7 @@ const ProductsDetails = () => {
       description:
         "Descripción del Producto 4: Calidad y rendimiento superior.",
       image: dozo4,
+      url: "/store/pets",
     },
   ];
 
@@ -124,9 +132,11 @@ const ProductsDetails = () => {
                   <br className="pt-2" />
                   {selectedProduct.description}
                   <div className="mt-10">
-                    <button className="w-[200px] shadow-sm shadow-gray-600 hover:shadow-red-500 p-2 rounded-xl">
-                      Todos los productos
-                    </button>
+                    <Link to={selectedProduct.url}>
+                      <button className="w-[200px] shadow-sm shadow-gray-600 hover:shadow-red-500 p-2 rounded-xl">
+                        Todos los productos
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
