@@ -49,10 +49,10 @@ export const features = [
 const FeatureCard = ({ icon, title, content, index, motionTime, color }) => (
   <div
     /* variants={fadeIn("up", "spring", motionTime * 0.5, 0.5)} */
-    className={`flex items-center   flex-col gap-2 md:gap-0 p-6 rounded-[20px] ${
+    className={`flex items-center   flex-col gap-2 md:gap-0 p-6 rounded-xl ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } 
-     shadow-sm shadow-gray-600  ${color}  hover:scale-105 duration-500 hover:bg-[#EDCC8F]
+     shadow-sm shadow-gray-600  ${color}  hover:scale-105 duration-500 
     `}
   >
     {/*  <div
@@ -62,7 +62,7 @@ const FeatureCard = ({ icon, title, content, index, motionTime, color }) => (
     </div> */}
     <div className="flex-1 flex flex-col ml-3 ">
       {/* <h4 className={`${styles.title} mb-1`}>{title}</h4> */}
-      <p className={`${styles.subtitle} text-center `}>{content}</p>
+      <p className={` text-n-4 text-center `}>{content}</p>
     </div>
   </div>
 );

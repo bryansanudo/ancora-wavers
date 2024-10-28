@@ -48,18 +48,15 @@ const ProductsDetails = () => {
     <Section
       id="dozo"
       customPaddings="pt-36 md:pt-28 md:pb-14"
-      crosses
+      /* crosses */
       crossesOffset="lg:translate-y-[1.25rem]"
     >
       <div className="container">
         <div className={`max-w-[50rem] mx-auto md:text-center`}>
-          <h2 className="h2">DOZO</h2>
-          <TagLine className="mb-4 md:justify-center">
-            Indica - Sativa - Hibrida
-          </TagLine>
+          <h2 className="h2">Productos</h2>
+          <TagLine className="mb-4 md:justify-center">tag line</TagLine>
           <p className="body-2 mt-4 text-n-4">
-            Conoce toda la variedad de productos y la nueva innovación Mushroom
-            de diferentes gramos.
+            Conoce toda la variedad de productos y nuestras nuevas innovaciónes
           </p>
         </div>
 
@@ -72,10 +69,10 @@ const ProductsDetails = () => {
                     <li
                       key={index}
                       onClick={() => setSelectedProduct(product)}
-                      className={`cursor-pointer px-4 py-2 rounded-xl ${
+                      className={`cursor-pointer  py- mx-10  ${
                         selectedProduct.name === product.name
-                          ? "bg-n-8 text-red-500"
-                          : "text-n-4"
+                          ? "h6 border-b border-gray-500"
+                          : "h6"
                       }`}
                     >
                       {product.name}
@@ -84,20 +81,19 @@ const ProductsDetails = () => {
                 </ul>
               </div>
               <div className="grid md:grid-cols-6 grid-cols-1 items-center justify-center shadow-sm shadow-gray-600 rounded-xl overflow-hidden md:h-[24rem]">
-                <div className="col-span-3 md:col-span-2 h-[24rem]  w-full md:rounded-none">
+                <div className="col-span-3 md:col-span-2 mb-3 h-[24rem]   w-full md:rounded-none shadow-sm shadow-gray-600 md:shadow-[#f2f2f2]">
                   <img
                     src={selectedProduct.image}
                     className="w-full h-full object-cover"
                     alt={selectedProduct.name}
                   />
                 </div>
-                <div className="col-span-3 md:col-span-4  md:mx-40 flex items-center justify-center text-center mb-4 p-4">
+                <div className="col-span-3 md:col-span-4  xl:mx-40 flex items-center justify-center text-center mb-4 p-4 text-n-4">
                   {selectedProduct.description}
                   <br className="pt-2" />
                   {selectedProduct.description}
                 </div>
               </div>
-              ----
             </div>
           </div>
 

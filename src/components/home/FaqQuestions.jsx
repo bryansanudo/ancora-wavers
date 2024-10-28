@@ -3,53 +3,41 @@ import { useState } from "react";
 const questions = [
   {
     id: 1,
-    question: "¿ Cómo puedo hacer para que dure más mi batería ? ",
+    question: "¿Cómo son los tamaños de los backpacks? ",
     answer:
-      "Lo mas recomendable es no cargar directamente a la luz ya que por la cantidad de voltios del toma corriente la batería podría presentar fallas a futuro, trata de cargarla desde un computador o cualquier otro dispositivo que tenga puerto USB.",
+      "Trabajamos generalmente el tamaño M y L. Tamaño M es aproximadamente entre 35cm de alto y 29cm de ancho. Tamaño L es aproximadamente entre 40cm de alto y 33cm de ancho.Igualmente, por el backpack que estés interesado nos preguntas y te responderemos.",
   },
   {
     id: 2,
-    question: "¿Se pueden recargar los productos de la marca DOZO ? ",
+    question: "¿Siempre tienen disponibilidad de los productos?",
     answer:
-      "No, puesto que este producto es 100% importado y cada contiene una batería que es desechable.",
+      "No, ya que sacamos pocas unidades al momento de la fabricación para que sea un accesorio único, pero si te encuentras interesado en alguno que no se encuentre disponible, se te podría fabricar por medio de encargo comunicándote directamente con nosotros.",
   },
 
   {
     id: 5,
-    question: "Sativa",
+    question: "¿Y si es por encargo… cómo sería y cuánto tardaría?",
     answer:
-      "Este tipo de variedad va a producir un efecto más “para arriba”, alegre y energizante, con efectos cerebrales estimulantes.",
+      "Para que comencemos la fabricación debesde transferir al # de cuenta la mitad del valor del backpack que quieras, a más tardar 15 días el producto estaría listo. Te contactaremos para avisarte que ya está listo tu backpack, debes de consignar el restante para proceder al envío.",
   },
   {
     id: 6,
-    question: "Índica",
+    question:
+      "¿Cuánto tarda mi backpack en llegar a mi destino luego de la compra?",
     answer:
-      "Esta variedad produce una sensación más tranquilizante, es genial para descansar y relajarse.",
+      "Si el producto está disponible y estás situado en Medellín te llegaría en el transcurso del día ó máximo 1 día hábil. Todo depende del horario en el que realices el pago. Si te encuentras en otra ciudad de Colombia, tarda aproximadamente de 2 a 4 días hábiles. Para compras fuera del país contáctanos vía Whatsapp o a nuestro correo electrónicohablemos@ancorawave.com",
   },
   {
     id: 7,
-    question: "Híbrida",
-    answer:
-      "Esta mezcla de cepas produce todo un abanico de sensaciones, fuertemente asociadas a las variedades originales, índica o sativa.",
+    question: "¿Qué garantía tengo sobre mi producto?",
+    answer: "Tienes 6 meses de garantía por defectos de fabricación.",
   },
 
   {
     id: 8,
-    question: "Sativa",
+    question: "¿Y si al llegarme mi producto prefiero cambiarlo por otro?",
     answer:
-      "Este tipo de variedad va a producir un efecto más “para arriba”, alegre y energizante, con efectos cerebrales estimulantes.",
-  },
-  {
-    id: 9,
-    question: "Índica",
-    answer:
-      "Esta variedad produce una sensación más tranquilizante, es genial para descansar y relajarse.",
-  },
-  {
-    id: 10,
-    question: "Híbrida",
-    answer:
-      "Esta mezcla de cepas produce todo un abanico de sensaciones, fuertemente asociadas a las variedades originales, índica o sativa.",
+      "Para cambios y devoluciones tu asumes el valor del envío hasta Áncorawave, y Áncorawave asume el valor del envío de regreso hasta tu ubicación. Tu producto solo podrá ser cambiado en un plazo menor a 15 días calendario. Puedes elegir cualquier articulo de igual valor. Si es de mayor valor, debes dar el excedente.",
   },
 ];
 
@@ -65,7 +53,7 @@ const FaqQuestions = () => {
       {questions.map(({ id, question, answer }, index) => (
         <div
           key={id}
-          className="border border-red-500 rounded-2xl overflow-hidden p-4"
+          className="border border-gray-300 rounded-2xl overflow-hidden p-4"
         >
           <button
             onClick={() => toggleQuestion(index)}
@@ -74,7 +62,7 @@ const FaqQuestions = () => {
             <div className="flex justify-between items-center">
               <span className="h6">{question}</span>
               <svg
-                className={`w-6 text-color-1 h-6 transform transition-transform duration-200 ${
+                className={`w-6 text-n-6 h-6 transform transition-transform duration-200 ${
                   activeIndex === index ? "rotate-180" : ""
                 }`}
                 fill="none"

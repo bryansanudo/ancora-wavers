@@ -16,8 +16,7 @@ const Faq = () => {
       customPaddings="pt-32 pb-14"
     >
       <div className="container relative z-2 mt-6">
-        <Heading title="Preguntas Frecuentes" />
-        <h2 className="h2 text-center">Title</h2>
+        <h2 className="h2 text-center">Preguntas Frecuentes</h2>
         <div className="relative">
           <FaqQuestions />
           <LeftLine />

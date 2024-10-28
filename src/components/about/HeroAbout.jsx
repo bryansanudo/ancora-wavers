@@ -15,7 +15,7 @@ const HeroAbout = () => {
       <div className="container lg:flex mt-20 ">
         <div className="md:max-w-[35rem] ">
           <div className={` max-w-[50rem] mx-auto mb-12 lg:mb-10 text-center `}>
-            {<h2 className="h2">Welcome Ancora Wavers</h2>}
+            {<h2 className="h2 ">Welcome Ancora Wavers</h2>}
             {<TagLine className="mb-4 justify-center ">We are</TagLine>}
             {}
           </div>

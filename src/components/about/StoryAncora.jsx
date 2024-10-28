@@ -26,7 +26,7 @@ const StoryAncora = () => {
 
         <div className="relative  ">
           <div className="relative z-1 grid gap-5 lg:grid-cols-1">
-            <div className=" flex flex-col justify-between border border-red-800  rounded-3xl overflow-hidden lg:min-h-[35rem] max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center ">
+            <div className=" flex flex-col justify-between border shadow-sm shadow-gray-600  rounded-xl overflow-hidden lg:min-h-[35rem] max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center ">
               <div className="py-6 px-2">
                 <p className="body-2 mt-4 text-n-4 text-center">
                   Soy Sara, fundadora de Áncorawave, un sueño que nació hace

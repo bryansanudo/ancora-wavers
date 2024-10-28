@@ -23,13 +23,13 @@ const Section = ({
       >
         {children}
 
-        <div className="hidden absolute top-0 bo left-5 w-0.25 h-full bg-red-500 pointer-events-none md:block lg:left-7.5 xl:left-10" />
-        <div className="hidden absolute top-0 right-5 w-0.25 h-full bg-red-500 pointer-events-none md:block lg:right-7.5 xl:right-7.5" />
+        <div className="hidden absolute top-0 bo left-5 w-0.25 h-full bg-n-3 pointer-events-none md:block lg:left-7.5 xl:left-10" />
+        <div className="hidden absolute top-0 right-5 w-0.25 h-full bg-n-3 pointer-events-none md:block lg:right-7.5 xl:right-7.5" />
 
         {crosses && (
           <>
             <div
-              className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-red-500 ${
+              className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-n-3 ${
                 crossesOffset && crossesOffset
               } pointer-events-none lg:block xl:left-10 right-10`}
             />
