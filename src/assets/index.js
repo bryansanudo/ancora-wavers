@@ -24,17 +24,6 @@ import background from "./background.jpg";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
-import curve1 from "./collaboration/curve-1.svg";
-import curve2 from "./collaboration/curve-2.svg";
-import discord from "./collaboration/discord.png";
-import figma from "./collaboration/figma.png";
-import framer from "./collaboration/framer.png";
-import notion from "./collaboration/notion.png";
-import photoshop from "./collaboration/photoshop.png";
-import protopie from "./collaboration/protopie.png";
-import raindrop from "./collaboration/raindrop.png";
-import slack from "./collaboration/slack.png";
-
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
@@ -55,18 +44,6 @@ import notification1 from "./notification/image-1.png";
 import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
-
-import benefitCard1 from "@/assets/benefits/card-1.svg";
-import benefitCard2 from "@/assets/benefits/card-2.svg";
-import benefitCard3 from "@/assets/benefits/card-3.svg";
-import benefitCard4 from "@/assets/benefits/card-4.svg";
-import benefitCard5 from "@/assets/benefits/card-5.svg";
-import benefitCard6 from "@/assets/benefits/card-6.svg";
-import benefitIcon1 from "@/assets/benefits/icon-1.svg";
-import benefitIcon2 from "@/assets/benefits/icon-2.svg";
-import benefitIcon3 from "@/assets/benefits/icon-3.svg";
-import benefitIcon4 from "@/assets/benefits/icon-4.svg";
-import benefitImage2 from "@/assets/benefits/image-2.png";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -99,16 +76,6 @@ export {
   background,
   robot,
   heroBackground,
-  curve1,
-  curve2,
-  discord,
-  figma,
-  framer,
-  notion,
-  photoshop,
-  protopie,
-  raindrop,
-  slack,
   service1,
   service2,
   service3,
@@ -126,17 +93,6 @@ export {
   notification2,
   notification3,
   notification4,
-  benefitCard1,
-  benefitCard2,
-  benefitCard3,
-  benefitCard4,
-  benefitCard5,
-  benefitCard6,
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
   discordBlack,
   facebook,
   instagram,

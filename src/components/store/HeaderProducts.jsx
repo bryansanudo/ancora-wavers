@@ -2,8 +2,6 @@ import Section from "@/components/Section";
 
 import TagLine from "@/components/Tagline";
 
-import dozo4 from "@/assets/dozo/dozo4.png";
-
 import backpacks from "@/assets/backpacks.jpg";
 import fannypacks from "@/assets/fannypacks.jpg";
 import complements from "@/assets/complements.jpg";
@@ -63,7 +61,7 @@ const HeaderProducts = () => {
       name: "Mascotas",
       description:
         "Descripción del Producto 4: Calidad y rendimiento superior.",
-      image: dozo4,
+      image: complements,
       url: "/store/pets",
       icon: iconpets,
     },
