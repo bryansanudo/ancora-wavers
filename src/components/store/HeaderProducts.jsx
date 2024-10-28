@@ -12,6 +12,12 @@ import dozo6 from "@/assets/dozo/dozo6.png";
 import backpacks from "@/assets/backpacks.jpg";
 import fannypacks from "@/assets/fannypacks.jpg";
 import complements from "@/assets/complements.jpg";
+import iconBackpacks from "@/assets/headerProducts/backpacks.png";
+import iconfannypacks from "@/assets/headerProducts/fannypacks.png";
+import iconbucket from "@/assets/headerProducts/bucket.png";
+import iconcomplements from "@/assets/headerProducts/complements.png";
+import icontshirt from "@/assets/headerProducts/tshirt.png";
+import iconpets from "@/assets/headerProducts/pets.png";
 
 import { Link } from "react-router-dom";
 
@@ -24,6 +30,7 @@ const HeaderProducts = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
       image: backpacks,
       url: "/store/backpacks",
+      icon: iconBackpacks,
     },
     {
       name: "Fannypacks",
@@ -31,6 +38,15 @@ const HeaderProducts = () => {
         "Descripción del Producto 2: Perfecto para tus necesidades diarias.",
       image: fannypacks,
       url: "/store/fannypacks",
+      icon: iconfannypacks,
+    },
+    {
+      name: "Hats",
+      description:
+        "Descripción del Producto 2: Perfecto para tus necesidades diarias.",
+      image: fannypacks,
+      url: "/store/fannypacks",
+      icon: iconbucket,
     },
     {
       name: "Complementos",
@@ -38,12 +54,23 @@ const HeaderProducts = () => {
         "Descripción del Producto 3: Diseño y funcionalidad impecables.",
       image: complements,
       url: "/store/complements",
+      icon: iconcomplements,
     },
     {
-      name: "Happy Dogs",
+      name: "T-Shirt",
+      description:
+        "Descripción del Producto 3: Diseño y funcionalidad impecables.",
+      image: complements,
+      url: "/store/complements",
+      icon: icontshirt,
+    },
+    {
+      name: "Mascotas",
       description:
         "Descripción del Producto 4: Calidad y rendimiento superior.",
       image: dozo4,
+      iconpets,
+      icon: iconpets,
     },
   ];
 
@@ -63,12 +90,26 @@ const HeaderProducts = () => {
           </p>
         </div>
 
-        <div className="pt-6 px-4  ">
-          <ul className="flex flex-col md:flex-row items-center justify-between py-6 shadow-sm rounded-xl shadow-gray-600">
+        <div className="py-6   ">
+          <ul className="grid md:grid-cols-6 grid-cols-3 md:gap-[60px]     py-6   ">
             {products.map((product, index) => (
-              <li key={index} className={`cursor-pointer  py- mx-10 `}>
-                <Link to={product.url}>{product.name}</Link>
-              </li>
+              <div
+                key={index}
+                className="flex items-center justify-center   flex-col mb-8 md:mb-0 cursor-pointer  "
+              >
+                <Link to={product.url}>
+                  <img
+                    src={product.icon}
+                    alt=""
+                    className="md:w-full w-[80%]"
+                  />
+                  <li
+                    className={`cursor-pointer mt-2 md:text-[16px] text-[12px] text-center`}
+                  >
+                    {product.name}
+                  </li>
+                </Link>
+              </div>
             ))}
           </ul>
         </div>
