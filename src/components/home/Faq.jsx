@@ -9,7 +9,7 @@ const Faq = () => {
       id="faq"
       crosses
       crossesOffset="lg:translate-y-[1.25rem]"
-      customPaddings="pt-32 pb-14"
+      customPaddings="md:pt-32 pt-10 pb-14"
     >
       <div className="container relative z-2 mt-6">
         <h2 className="h2 text-center">Preguntas Frecuentes</h2>

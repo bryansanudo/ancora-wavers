@@ -73,22 +73,21 @@ const ProductsDetails = () => {
   return (
     <Section
       id="dozo"
-      customPaddings="pt-36 md:pt-28 md:pb-14"
+      customPaddings="pt-0 md:pt-28 md:pb-14"
       /* crosses */
       crossesOffset="lg:translate-y-[1.25rem]"
     >
       <div className="container">
-        <div className={`max-w-[50rem] mx-auto md:text-center`}>
+        <div className={`max-w-[50rem] mx-auto text-center`}>
           <h2 className="h2">Productos</h2>
-          <TagLine className="mb-4 md:justify-center">tag line</TagLine>
-          <p className="body-2 mt-4 text-n-4">Comprar por categoría</p>
+          <TagLine className="mb-4 justify-center">tag line</TagLine>
         </div>
 
         <div className="relative">
           <div className="relative z-1 grid gap-5 lg:grid-cols-1  ">
             <div className="p-1 flex flex-col justify-between rounded-3xl overflow-hidden lg:min-h-[35rem]">
-              <div className="py-6   ">
-                <ul className="grid md:grid-cols-6 grid-cols-3 md:gap-[60px]     py-6   ">
+              <div className="md:py-4   ">
+                <ul className="grid md:grid-cols-6 grid-cols-3 md:gap-[60px]     md:py-4   ">
                   {products.map((product, index) => (
                     <div
                       key={index}
