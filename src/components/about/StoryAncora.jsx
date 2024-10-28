@@ -10,21 +10,18 @@ const StoryAncora = () => {
   return (
     <Section
       id="dozo"
-      customPaddings="pt-36 md:pt-28 md:pb-14"
-      crosses
+      customPaddings=""
+      /* crosses */
       crossesOffset="lg:translate-y-[1.25rem]"
     >
       <div className="container ">
-        <div
-          className={` max-w-[50rem] mx-auto mb-12 lg:mb-10 md:text-center `}
-        >
-          {<h2 className="h2">Welcome Ancora Wavers</h2>}
-          {
+        <div className={` max-w-[50rem] mx-auto mb-8 md:text-center `}>
+          {<h2 className="h2 text-center">Nuestra Historia</h2>}
+          {/*   {
             <TagLine className="mb-4 md:justify-center ">
               Nuestra Historia
             </TagLine>
-          }
-          {}
+          } */}
         </div>
 
         <div className="relative  ">

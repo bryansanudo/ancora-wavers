@@ -16,6 +16,7 @@ export const features = [
       "Somos atrevidos, los que gustan de las combinaciones,todo lo que es fuera de lo común.",
     content:
       "Somos atrevidos, los que gustan de las combinaciones,todo lo que es fuera de lo común.",
+    color: "hover:bg-[#AFD0CD]",
   },
   {
     id: "feature-2",
@@ -24,6 +25,7 @@ export const features = [
     title: "Plataforma Intuitiva y Accesible",
     content:
       "Nos parcha lo tropical,llevamos la vida veraniega en nuestro ser.",
+    color: "hover:bg-[#FFF696]",
   },
   {
     id: "feature-3",
@@ -32,6 +34,7 @@ export const features = [
     title: "Certificado de Asistencia",
     content:
       "Valoramos lo diferente, nos sentimos únicos siguiendo nuestros instintos con un estilo propio.",
+    color: "hover:bg-[#E5B7D2]",
   },
   {
     id: "feature-4",
@@ -39,16 +42,17 @@ export const features = [
     icon: <GrCertificate />,
     title: "Certificado de Asistencia",
     content: "Hey ancorawaver, ¿eres tú?",
+    color: "hover:bg-[#EDCC8F]",
   },
 ];
 
-const FeatureCard = ({ icon, title, content, index, motionTime }) => (
+const FeatureCard = ({ icon, title, content, index, motionTime, color }) => (
   <div
     /* variants={fadeIn("up", "spring", motionTime * 0.5, 0.5)} */
-    className={`flex items-center  flex-col gap-2 md:gap-0 p-6 rounded-[20px] ${
+    className={`flex items-center   flex-col gap-2 md:gap-0 p-6 rounded-[20px] ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } 
-     shadow-md shadow-black hover:scale-105 duration-500
+     shadow-sm shadow-gray-600  ${color}  hover:scale-105 duration-500 hover:bg-[#EDCC8F]
     `}
   >
     {/*  <div
@@ -56,7 +60,7 @@ const FeatureCard = ({ icon, title, content, index, motionTime }) => (
     >
       <span className="text-white text-3xl">{icon}</span>
     </div> */}
-    <div className="flex-1 flex flex-col ml-3">
+    <div className="flex-1 flex flex-col ml-3 ">
       {/* <h4 className={`${styles.title} mb-1`}>{title}</h4> */}
       <p className={`${styles.subtitle} text-center `}>{content}</p>
     </div>
@@ -64,7 +68,7 @@ const FeatureCard = ({ icon, title, content, index, motionTime }) => (
 );
 
 const CardsAbout = () => (
-  <section id="features">
+  <section id="features" className="">
     <div
       /*  variants={staggerContainer()}
       initial="hidden"

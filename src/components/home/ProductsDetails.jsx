@@ -66,9 +66,9 @@ const ProductsDetails = () => {
         </div>
 
         <div className="relative">
-          <div className="relative z-1 grid gap-5 lg:grid-cols-1">
-            <div className="p-4 flex flex-col justify-between border border-n-1/10 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[35rem]">
-              <div className="py-6 px-2">
+          <div className="relative z-1 grid gap-5 lg:grid-cols-1  ">
+            <div className="p-4 flex flex-col justify-between border  border-n-1/10 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[35rem]">
+              <div className="py-6 px-2  ">
                 <ul className="flex items-center justify-between py-6">
                   {products.map((product, index) => (
                     <li
@@ -86,7 +86,7 @@ const ProductsDetails = () => {
                 </ul>
               </div>
 
-              <div className="relative border border-n-1/10 bg-n-8 rounded-xl overflow-hidden md:h-[24rem] p-4">
+              <div className="relative border border-n-1/10 bg-n-8 rounded-xl overflow-hidden md:h-[24rem] p-4 ">
                 <p className="text-white text-center mb-4">
                   {selectedProduct.description}
                 </p>

@@ -6,13 +6,19 @@ import { LeftCurve, RightCurve } from "@/components/design/Collaboration";
 import CardsAbout from "@/components/about/CardsAbout";
 import tha from "@/assets/tha.png";
 import { GradientAbout as X } from "@/components/design/Services";
+import heroImage from "@/assets/about-01.png";
+import TagLine from "@/components/Tagline";
 
 const HeroAbout = () => {
   return (
     <Section crosses>
-      <div className="container lg:flex my-20 ">
-        <div className="md:max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">We Are</h2>
+      <div className="container lg:flex mt-20 ">
+        <div className="md:max-w-[35rem] ">
+          <div className={` max-w-[50rem] mx-auto mb-12 lg:mb-10 text-center `}>
+            {<h2 className="h2">Welcome Ancora Wavers</h2>}
+            {<TagLine className="mb-4 justify-center ">We are</TagLine>}
+            {}
+          </div>
 
           {/* <ul className="max-w-[22rem] mb-10 md:mb-14">
             {collabContent.map((item) => (
@@ -28,7 +34,7 @@ const HeroAbout = () => {
             ))}
             </ul> */}
 
-          <div className="mb-10 md:mb-14  w-full">
+          <div className="mb-10 md:mb-14  w-full ">
             <CardsAbout />
           </div>
         </div>
@@ -39,7 +45,7 @@ const HeroAbout = () => {
           </p> */}
 
           <div className=" relative left-1/2 flex  aspect-square  -translate-x-1/2 ">
-            <img src={tha} className="z-[90]" alt="" />
+            <img src={heroImage} className="z-[90] rounded-2xl" alt="" />
 
             <X />
           </div>

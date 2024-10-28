@@ -9,6 +9,11 @@ const Footer = () => {
           © {new Date().getFullYear()}. All rights reserved.
         </p>
 
+        <ul className="flex flex-col md:flex-row gap-3 items-center justify-center">
+          <li>Términos y condiciones</li>
+          <li>Política de privacidad</li>
+        </ul>
+
         <ul className="flex gap-5 flex-wrap">
           {socials.map((item) => (
             <a
