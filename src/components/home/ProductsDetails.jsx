@@ -4,8 +4,12 @@ import { useState } from "react";
 
 import TagLine from "@/components/Tagline";
 
-import fannypacks from "@/assets/fannypacks.jpg";
-import complements from "@/assets/complements.jpg";
+import fannypacks from "@/assets/852/fannypacks.jpg";
+import complements from "@/assets/852/complements.jpg";
+import hat from "@/assets/852/hat.jpg";
+import backpacks from "@/assets/852/backpacks.jpg";
+import tshirt from "@/assets/852/tshirt.jpg";
+
 import iconBackpacks from "@/assets/headerProducts/backpacks.png";
 import iconfannypacks from "@/assets/headerProducts/fannypacks.png";
 import iconbucket from "@/assets/headerProducts/bucket.png";
@@ -23,14 +27,14 @@ const ProductsDetails = () => {
       name: "Backpacks",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
-      image: fannypacks,
+      image: backpacks,
       url: "/store/backpacks",
     },
     {
       icon: iconfannypacks,
       name: "Fannypacks",
       description:
-        "Descripción del Producto 2: Perfecto para tus necesidades diarias.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
       image: fannypacks,
       url: "/store/fannypacks",
     },
@@ -38,15 +42,15 @@ const ProductsDetails = () => {
       icon: iconbucket,
       name: "Hats",
       description:
-        "Descripción del Producto 4: Calidad y rendimiento superior.",
-      image: fannypacks,
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
+      image: hat,
       url: "/store/hats",
     },
     {
       icon: iconcomplements,
       name: "Complementos",
       description:
-        "Descripción del Producto 3: Diseño y funcionalidad impecables.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
       image: complements,
       url: "/store/complements",
     },
@@ -54,16 +58,16 @@ const ProductsDetails = () => {
       icon: icontshirt,
       name: "T-Shirt",
       description:
-        "Descripción del Producto 4: Calidad y rendimiento superior.",
-      image: fannypacks,
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
+      image: tshirt,
       url: "/store/tshirts",
     },
     {
       icon: iconpets,
       name: "Mascotas",
       description:
-        "Descripción del Producto 4: Calidad y rendimiento superior.",
-      image: fannypacks,
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cupiditate saepe magni ex odit qui quod suscipit, magnam atque, sunt sequi culpa itaque et, laboriosam nihil possimus. Voluptate, dolores iste?",
+      image: tshirt,
       url: "/store/pets",
     },
   ];
@@ -126,8 +130,8 @@ const ProductsDetails = () => {
                   {selectedProduct.description}
                   <div className="mt-10">
                     <Link to={selectedProduct.url}>
-                      <button className="w-[200px] shadow-sm shadow-gray-600 hover:shadow-red-500 p-2 rounded-xl">
-                        Todos los productos
+                      <button className="w-[200px] bg-black text-n-4 hover:text-white transition-colors duration-300 shadow-sm shadow-gray-600  p-2 rounded-2xl">
+                        {selectedProduct.name}
                       </button>
                     </Link>
                   </div>
