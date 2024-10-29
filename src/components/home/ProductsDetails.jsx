@@ -20,6 +20,10 @@ import iconpets from "@/assets/headerProducts/pets.png";
 import { Link } from "react-router-dom";
 
 const ProductsDetails = () => {
+  const scrollto = () => {
+    window.scrollTo(0, 1200);
+  };
+
   // Nombres, descripciones y rutas de imágenes para los productos
   const products = [
     {
@@ -129,7 +133,7 @@ const ProductsDetails = () => {
                   <br className="pt-2" />
                   {selectedProduct.description}
                   <div className="mt-10">
-                    <Link to={selectedProduct.url}>
+                    <Link to={selectedProduct.url} onClick={scrollto()}>
                       <button className="w-[200px] bg-black text-n-4 hover:text-white transition-colors duration-300 shadow-sm shadow-gray-600  p-2 rounded-2xl">
                         {selectedProduct.name}
                       </button>
