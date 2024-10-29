@@ -46,7 +46,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <p className="caption text-n-4 lg:block">
+        <p className="caption text-n-4 lg:block text-center">
           © {new Date().getFullYear()}. AncoraWave. Todos los derechos
           reservados.
         </p>

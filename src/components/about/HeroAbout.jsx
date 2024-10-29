@@ -41,10 +41,12 @@ const HeroAbout = () => {
             {collabText}
           </p> */}
 
-          <div className=" relative left-1/2 flex  aspect-square  -translate-x-1/2 ">
+          <div className=" relative left-1/2 flex  aspect-square  ml-4  -translate-x-1/2 ">
             <img src={heroImage} className="z-[90] rounded-2xl" alt="" />
 
-            <X />
+            <div className="hidden md:flex">
+              <X />
+            </div>
           </div>
         </div>
       </div>

@@ -4,8 +4,9 @@ import Section from "@/components/Section";
 import { Gradient } from "@/components/design/Hero";
 import { Gradient as X } from "@/components/design/Services";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { ScrollParallax } from "react-just-parallax";
+import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
 import hero0 from "@/assets/hero/hero0.png";
 import hero7 from "@/assets/hero/hero7.png";
@@ -15,7 +16,17 @@ import hero6 from "@/assets/hero/hero6.png";
 import hero8 from "@/assets/hero/hero8.png";
 const Hero = () => {
   const parallaxRef = useRef(null);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(true);
+  const videoRef = useRef();
+  const handleVideoPause = () => {
+    videoRef.current.pause();
+    setIsVideoPlaying(false);
+  };
 
+  const handleVideoPlay = () => {
+    videoRef.current.play();
+    setIsVideoPlaying(true);
+  };
   return (
     <>
       <Section className="pt-[8rem] -mt-[2.5rem]" id="hero">
@@ -67,20 +78,36 @@ const Hero = () => {
             </h1>
           </div>
           {/*    <X /> */}
-          <div className="relative max-w-[337px] mx-auto    ">
+          <div className="relative md:max-w-[330px] w-[300px] mx-auto    ">
             <div className="relative z-1  p-0.5 rounded-2xl bg-conic-gradient">
               <div className="relative  bg-n-8 rounded-[1rem]">
                 <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
 
                 <video
                   src={heros}
+                  ref={videoRef}
                   autoPlay
                   loop
                   type="video/mp4"
                   playsInline
                   muted
-                  className="h-[37rem] w-full rounded-b-xl"
+                  className="md:h-[37rem] h-[33rem] w-full rounded-b-xl"
                 />
+                <div className="absolute bottom-10 right-[45%]  ">
+                  {isVideoPlaying ? (
+                    <FaPauseCircle
+                      size={35}
+                      onClick={handleVideoPause}
+                      className="cursor-pointer hover:scale-105 duration-300 text-white"
+                    />
+                  ) : (
+                    <FaPlayCircle
+                      size={35}
+                      onClick={handleVideoPlay}
+                      className="cursor-pointer hover:scale-110 duration-300 text-white"
+                    />
+                  )}
+                </div>
               </div>
 
               <Gradient />

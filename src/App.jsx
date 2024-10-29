@@ -20,7 +20,7 @@ const App = () => {
         </Routes>
       </div>
       <div
-        className={`fixed flex items-center justify-center hover:scale-110 duration-700 rounded-full w-12 h-12 bg-[#00E676] text-yellow-500 z-[100] md:right-14 right-6 bottom-10   `}
+        className={`fixed flex items-center justify-center hover:scale-110 duration-700 rounded-full w-12 h-12 bg-[#00E676] text-yellow-500 z-[100] md:right-14 right-2 bottom-20 md:bottom-16   `}
       >
         <a
           href="https://api.whatsapp.com/send/?phone=573237531775&text&type=phone_number&app_absent=0"
